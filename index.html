@@ -93,23 +93,23 @@
         </div>
     </section>
 
-    <section id="skills">
+    <<section id="skills">
         <div class="container">
             <h2>My Skills</h2>
             <div class="skills-grid">
-                <div class="skill">
+                <div class="skill skill-aws">
                     <h3>AWS</h3>
                     <p>Expert in EC2, S3, Lambda, IAM, and CloudFormation for building scalable cloud solutions.</p>
                 </div>
-                <div class="skill">
+                <div class="skill skill-terraform">
                     <h3>Terraform</h3>
                     <p>Automating cloud infrastructure provisioning using Infrastructure-as-Code (IaC).</p>
                 </div>
-                <div class="skill">
+                <div class="skill skill-docker">
                     <h3>Docker & Kubernetes</h3>
                     <p>Containerization of apps and orchestration with Kubernetes to ensure scalability and reliability.</p>
                 </div>
-                <div class="skill">
+                <div class="skill skill-cicd">
                     <h3>CI/CD</h3>
                     <p>Implementing continuous integration and delivery pipelines using tools like Jenkins, GitLab CI, and GitHub Actions.</p>
                 </div>
@@ -143,33 +143,49 @@
         }
     
         .skill {
-            background-color: #f9f9f9;
             border: 1px solid #ddd;
             padding: 1.5rem;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            color: #fff;
+        }
+    
+        .skill-aws {
+            background-color: #ff7f50; /* Coral */
+        }
+    
+        .skill-terraform {
+            background-color: #4caf50; /* Green */
+        }
+    
+        .skill-docker {
+            background-color: #1e90ff; /* Dodger Blue */
+        }
+    
+        .skill-cicd {
+            background-color: #8a2be2; /* Blue Violet */
         }
     
         .skill:hover {
             transform: translateY(-10px) scale(1.03);
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(255, 255, 255, 0.6);
             background: linear-gradient(145deg, #ffffff, #e6e6e6);
+            color: #333;
         }
     
         .skill h3 {
             margin-top: 0;
             margin-bottom: 1rem;
             font-size: 1.5rem;
-            color: #333;
         }
     
         .skill p {
             margin: 0;
-            color: #666;
             line-height: 1.6;
         }
     </style>
+    
     
 
     <section id="projects">
