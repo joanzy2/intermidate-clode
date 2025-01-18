@@ -176,17 +176,17 @@
         <div class="container">
             <h2>My Projects</h2>
             <div class="projects-grid">
-                <div class="project">
+                <div class="project project-1">
                     <h3>Cloud Cost Optimization Tool</h3>
                     <p>An automated solution that helps businesses reduce cloud spending by identifying unused resources and optimizing configurations.</p>
                     <a href="#" class="btn">View Project</a>
                 </div>
-                <div class="project">
+                <div class="project project-2">
                     <h3>CI/CD Pipeline for E-commerce App</h3>
                     <p>Built a fully automated pipeline for an e-commerce platform, reducing manual deployment and improving release cycles.</p>
                     <a href="#" class="btn">View Project</a>
                 </div>
-                <div class="project">
+                <div class="project project-3">
                     <h3>Containerized Microservices Architecture</h3>
                     <p>Created a microservices architecture using Docker and Kubernetes for improved scalability and fault tolerance.</p>
                     <a href="#" class="btn">View Project</a>
@@ -194,6 +194,83 @@
             </div>
         </div>
     </section>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+    
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+    
+        .project {
+            background-color: #f4f4f4;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+    
+        .project:hover {
+            transform: translateY(-10px) scale(1.05) rotateX(8deg) rotateY(-8deg);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(255, 255, 255, 0.6);
+        }
+    
+        /* Unique hover colors for each project card */
+        .project-1:hover {
+            background: linear-gradient(145deg, #ff7f50, #ff6347);
+        }
+    
+        .project-2:hover {
+            background: linear-gradient(145deg, #4caf50, #388e3c);
+        }
+    
+        .project-3:hover {
+            background: linear-gradient(145deg, #1e90ff, #4169e1);
+        }
+    
+        .project h3 {
+            margin: 0 0 1rem;
+            color: #333;
+        }
+    
+        .project p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+    
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+    
+        .btn:hover {
+            background-color: #555;
+        }
+    </style>
+    
 
     <section id="contact">
         <div class="container">
